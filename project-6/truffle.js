@@ -1,5 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-var mnemonic = "tide west sock play coyote weapon run rebel used apart negative vote";
+var mnemonic = "your mnemonic here";
 
 module.exports = {
   networks: {
@@ -9,7 +9,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     rinkeby: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/6178ae20e347446d93c98ec837649276'),
+      provider: () => new HDWalletProvider(mnemonic, 'infura rinkeby endpoint'),
         network_id: 4,
         gas: 4500000,       
         gasPrice: 10000000000
